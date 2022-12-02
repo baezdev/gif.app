@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifCard /> match con el snapshot 1`] = `
+<div>
+  <div
+    class="w-full h-fit p-px bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+  >
+    <div>
+      <img
+        alt="Goku"
+        class="w-full"
+        src="https:"
+      />
+      <p
+        class="bg-slate-100 px-4 py-7 text-base text-center font-bold"
+      >
+        Goku
+      </p>
+    </div>
+  </div>
+</div>
+`;

@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import PropTypes from "prop-types";
+
 export const AddCategory = ({ onNewCategory }) => {
   const [value, setValue] = useState("");
 
@@ -17,7 +19,11 @@ export const AddCategory = ({ onNewCategory }) => {
   };
 
   return (
-    <form className="max-w-xl mx-auto my-12" onSubmit={handleAddCategory}>
+    <form
+      className="max-w-xl mx-auto my-12"
+      onSubmit={handleAddCategory}
+      aria-label="form"
+    >
       <div className="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
         <input
           type="text"
@@ -29,4 +35,8 @@ export const AddCategory = ({ onNewCategory }) => {
       </div>
     </form>
   );
+};
+
+AddCategory.propTypes = {
+  onNewCategory: PropTypes.func.isRequired,
 };
